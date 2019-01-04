@@ -1,0 +1,920 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+<nav id="navbar">
+  <header>Python Documentation</header>
+  <ul> 
+    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+    <a class="nav-link" href="#Prerequisites" rel="internal"><li>Prerequisites</li></a>
+    <a class="nav-link" href="#Computer_Basics" rel="internal"><li>Computer Basics</li></a>
+    <a class="nav-link" href="#Hello_world" rel="internal"><li>Hello world</li></a>
+    <a class="nav-link" href="#Variables" rel="internal"><li>Variables</li></a>
+    <a class="nav-link" href="#Declaring_variables" rel="internal"><li>Declaring variables</li></a>
+    <a class="nav-link" href="#Conditionals" rel="internal"><li>Conditionals</li></a>
+    <a class="nav-link" href="#Global_Variables" rel="internal"><li>Global Variables</li></a>
+    <a class="nav-link" href="#Constants" rel="internal"><li>Constants</li></a>
+    <a class="nav-link" href="#Lists" rel="internal"><li>Lists</li></a>
+    <a class="nav-link" href="#Loops" rel="internal"><li>Loops</li></a>
+     <a class="nav-link" href="#while_statement" rel="internal"><li>while statement</li></a>
+    <a class="nav-link" href="#Advanced_Concepts" rel="internal"><li>Advanced Concepts</li></a>
+    <a class="nav-link" href="#More_Advanced_Concepts" rel="internal"><li>More Advanced Concepts</li></a>
+    <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+  </ul>
+</nav>
+    <main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>  
+      <p>Python is a high level general-purpose programming language. It uses a multi-paradigm approach, meaning it supports procedural, object-oriented and some functional programming constructs. ... Python is also used in Data Engineering notably PySpark.</p>
+
+<p>Python is a widely used, general-purpose, interpreted scripting language. It is available on a broad range of platforms, including Windows, Linux, and Mac OS X. Python helps you work quickly and integrate systems effectively, and it encourages programmers to program without boilerplate (prepared) code.</p>
+
+<li>Client-side</li>
+<li>Server-side </li>
+      </artice>
+    </section>
+  <section class="main-section" id="Prerequisites">
+    <header>Prerequisites</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <li>A general understanding of the your computer, the internet, and the World Wide Web (WWW).</li>
+      <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+<li>Some programming experience. If you are new to programming, check out the "Absolute Beginner" section of MDN.</li>
+      </artice>
+    </section>
+  <section class="main-section" id="Computer_Basics">
+    <header>Computer Basics</header>
+    <article>
+    <p>Python is a great first programming language for beginners but you will need to have an understanding of the computer that you are using as well as a basic understanding of your filesystem and how to download, unzip, open, and save installations. There are ample resources to help beginners in this area and the "Absolute Beginner" section of MDN is a great place to start if you are unsure of your computer literacy.</p>
+
+    </article>
+    </section>
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article> 
+As customary when learning a new language, the first program a programmer writes is called "Hello, world!". It's a very simple program that outputs the text string "Hello, world!" to the console. But, as we'll see, there's a lot of stuff going on even in a program that's so simple. So let's fire up the Python interpreter and type the "Hello, world!" program.
+<code>>>> print("Hello, world!")
+      Hello, world!
+      >>>
+</code>
+
+    </article>
+    </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>
+Doing computation on the fly is fun and all, but suppose you want to actually store the results of a computation. This is what variables are for.
+
+A variable is like a box where you can store numbers, strings and the other complex objects we'll learn to use going on with this tutorial.
+    </p>
+    <p>
+In Python, variable names have to start with a letter (upper-case or lower-case) or an underscore and can only be made up of letters (upper-case or lower-case), underscores and digits. For example, the following are all valid variable names:</p>
+    <p>
+<code>
+username
+_password
+article_content
+menu_2
+theGreatestVariableEver
+This, on the contrary, are not valid names
+
+is-ok? (contains a dash and a question mark)
+2values (doesn't begin with an underscore or a letter)
+      </code>
+    </p>
+
+   
+    </section>
+  <section class="main-section" id="Declaring_variables">
+    <header>Declaring variables</header>
+    <article>
+How to declare a variable:
+      <p>
+     To start using a variable, you simply assign a value to it. To do so, you write the variable name, followed by an equal sign (=) and the value (or expression) you want to assign it. For example, <code>var x = 42.</code> This syntax can be used to declare both local and global variables.
+      </p>
+       <p>      
+To check what's inside a variable while using the interactive interpreter, you just write the variable name and press enter.
+      </p>
+
+      <p>
+        <code>
+          >>> x
+          42
+          >>> sum
+          35
+        </code> 
+      </p>
+      
+      <p>
+        You can use variables inside of expressions. 
+      </p>
+      <code>
+        >>> sum_minus_x = sum - x
+        >>> sum_minus_x
+        -7
+      </code>
+        <p>
+        And of course you can print variables with the print function.
+      </p>
+      <p>
+      <code>
+         >>> print(sum)
+         35
+      </code>
+    
+      </p>
+      <p>
+        It's a good moment to teach you about the input function. What it does is ask the user for a string and return it. Suppose, for example, you need to ask the name to the user to greet them. How would we do this?
+      </p>
+      <p>
+        <code>
+          >>> name = input("What's your name? ")
+          What's your name? Jane
+          >>> print("Hello " + name)
+          Hello Jane
+        </code>
+      </p>
+    </article>
+    </section>
+  <section class="main-section" id="Conditionals">
+    <header>Conditionals</header>
+    <article>
+     <p> If programs could just be run from bottom-down without possible detours they would achieve very little. Because of this, there are constructs (called conditionals) that can be used to take various paths inside code. Let's take our simple calculator and modify it so that the user can choose which operator to use.
+      </p>
+<p>
+<code>a = input("Write the first number: ")
+      b = input("Write the second number: ")
+      op = input("Choose the operator (+, -, *, /) ")
+      if op == '+':
+      sum = int(a) + int(b)
+      print("Their sum is " + str(sum))
+      elif op == '-':
+      sub = int(a) - int(b)
+      print("Their subtraction is " + str(sub))
+      elif op == '*':
+      prod = int(a) * int(b)
+      print("Their product is " + str(prod))
+      elif op == '/':
+      quot = int(a) / int(b)
+      print("Their quotient is " + str(quot))
+      else:
+      print("Unknown operator")
+      </code>
+      <p>Again, lots of stuff. Let's break it down a bit.
+
+First, we ask the user to input the two operands and the operator. This is nothing new.
+
+Then we start evaluating the various possibilities and act accordingly. The if keyword introduces a conditional, that is a piece of code that gets executed only if some condition (or multiple conditions, as we'll see later) holds true. The general structure is:.</p>
+
+<code>
+      if [condition]:
+      [do something]
+  </code>
+      <p>
+condition is anything that can be evaluated to True or False. Usually, it is a comparison. So let's look at how comparisons work.</p>
+    </article>
+    </section>
+  <section class="main-section" id="Global_Variables">
+    <header>Global Variables</header>
+    <article>
+<p>There's a number of operators we can use for comparison. Let's take the equality (==) operator as an example. Fire up the interpreter in interactive mode and let's do some tests.</p>
+<p>
+  <code>
+>>> 5 == 5
+True
+>>> 5 == 4
+False
+>>> 5 == 'hello'
+False
+>>> 'hello' == 'hello'
+True
+      </code>
+    </p>
+
+<p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+    </article>
+    </section>
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+
+<p>In the first case, 5 is actually equal to 5, so the interpreter tells us the comparison holds true.
+In the second case, 4 is surely not equal to 5, so the interpreter yields False.
+A number is clearly not the same as a string, so the result is False.
+Finally, two strings containing the exact same characters, and only those characters, are practically the same string, so the comparison yields True.
+Here's a list of the comparison operators available in Python:</p>
+      <p>
+<code>      
+==	
+Operand on the left equals operand on the right
+
+!=	Operand on the left does not equal operand on the right
+>	Operand on the left is greater than operand on the right
+>=	Operand on the left is greater or equal operand on the right
+<	Operand on the left is lesser than operand on the right
+<=	
+Operand on the left is lesser or equal operand on the right
+        </code>
+        
+      </p>
+
+<p>
+  <code>
+  if [condition]:
+  [do something]
+      </code>
+    </p>
+  <p>
+We already explained what the condition part is, so let's go on. After the condition, we put a colon and we go to a newline. At the beginning of the next line we put a certain number of spaces (4, by convention). From there on, everything that is indented by the same number of spaces will be executed if and only if the condition yielded True, up to a line with a lesser number of leading spaces. Let's use a simpler example to clarify.</p>
+  <p>
+    <code>
+    if 5 == 5:
+    print("5 equals 5")
+    print("But we already knew it")
+    print("You learned something today :)")</code></p>
+As silly as it is, this example shows us that the first two prints would have been executed only if the condition (5 == 5) yield True, while the last print would have been executed anyway. Let's see the counter-example.
+    <p>
+    <code>
+    if 5 != 5:
+    print("5 equals 5")
+    print("So you won't see these lines")
+    print("I'll be printed anyway :)")
+    </code>
+      
+      </p>
+  <p>
+Only the last line will be printed this time because it's not part of the if statement.
+
+So, back to our simple calculator, if when asked the operator, the user put '+' the condition of the if statement would have been true and the following two lines (the one doing the addition and the one printing the result) would have been executed. Otherwise, they would have been ignored.
+
+Since in this particular case the choices are mutually exclusive (the user couldn't have input both '+' and '-'), we could just get away with a series of ifs. But that wouldn't allow us to consider the alternative where the user didn't chose any of the supported operators. To achieve this, Python provides two statements: elif and else.
+
+elif is used when the condition from the previous if wasn't met but we want to provide another condition. That is, we're not simply saying 'otherwise', we are providing an alternative but with some other constraint. The form of an elif statement is the same as the one for the if statement. The only difference is that it has to be proceeded by an if block (that is, an if statement followed by the indented part).
+
+On the other end, else tells the interpreter "if none of the previous conditions were met, just do this". Because it's the last resort, it must me placed at the end of a conditions chain (that is, it can't be followed by another elif or another else). Also, notice that else can be used after an if, without there being elifs, like in this (useless) program that checks if you are over 18:</p>
+      <p>
+<code>
+age = input("How old are you? ")
+if int(age) > 18:
+    print("Ok, you can enter")
+else:
+  print("Come back when you're older!")</code></p>
+
+<p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+
+<code>// THIS WILL CAUSE AN ERROR
+function f() {};
+const f = 5;
+// THIS WILL CAUSE AN ERROR ALSO
+function f() {
+  const g = 5;
+  var g;
+  //statements
+}</code>
+However, object attributes are not protected, so the following statement is executed without problems.
+<code>const MY_OBJECT = {"key": "value"};
+MY_OBJECT.key = "otherValue";</code>
+    </article>
+    </section>
+  <section class="main-section" id="Lists">
+    <header>Lists</header>
+    <article>
+      <p>When it comes to data manipulation, one often needs some structure to store multiple values. Python is no exception and it actually has several compound data types. The one described in this article is very similar to some other structures in other languages: the list. It can store multiple values from different types (so you could have a list with integers only or a mix with integer, floating numbers, or even lists of lists). A list is written with values, separated by commas and enclosed in square brackets.
+
+ExamplesSection
+For example, you might write:
+
+A list of integers:
+      </p>
+      <p>
+        <code>
+>>> integerList = [1, 2, 3, 4]
+       </code>
+      </p>
+      <p>
+A list whose values are made up of different types:
+      </p>
+      <p>
+        <code>
+
+>>> mixedList   = [1, "hello", 2.02, "foo"]
+       </code>
+      </p>
+      <p>
+A list where some values are themselves list:
+      </p>
+      <p>
+        <code>
+>>> listOfLists = [1, 2, [3, 4, 5], [5, 6, 7], 7, 8]
+      </code>
+      </p>
+      <p>
+Indexing and slicingSection
+Once you have a list, you might quickly need a way to access a given value in this list. Or sometimes, you might want a subset of it (a slice). Python's syntax allows for these operations quite simply.
+
+IndexingSection
+A given element of the list has an index which is its position regarding the start of the list. Given an element's index, it is possible to fetch the value in the list by writing the name of the list, followed by the index, enclosed in square brackets. Attention, indexes start from 0 so be careful when counting.
+</p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> print(myList[0])
+1
+>>> myList[1]
+2
+>>> myList[4]
+5
+      </code>
+      </p>
+      <p>
+
+If the index is greater than the lenght of the list, attempting such access will raise an exception. For example:
+      </p>
+      <p>
+<code>
+>>> mylist[5]
+      </code>
+      </p>
+      <p>
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+Knowing the size of a list: len()
+Most of the time, you will use lists which are of differents sizes and you might not be able to foresee the length of the list before manipulating it. Since this is a common operation, Python has a built-in function len which takes a list as an argument and returns the length of the list.
+</p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> print(len(myList))
+5
+      </code>
+      </p>
+      <p>
+A list can have 1 single element:
+</p>
+      <p>
+<code>
+>>> singleList = ["foo"]
+>>> print(len(singleList))
+1
+      </code>
+      </p>
+      <p>
+Now, an example with a list of lists
+</p>
+      <p>
+<code>
+>>> listOfLists = [1, [2, 3], [4, 5, 6]]
+>>> print(len(listOfLists))
+3 
+>>> print(len(listOfLists[1]))
+2 (the length of [2, 3])
+      </code>
+      </p>
+      <p>
+Negative indexes
+It is possible to use negative indexes. In such cases, Python will browse the list in reverse order (from the end to the beginning). For examplee myList[-1] will return the last element of myList. This notation is a welcomed shortcut in order to avoid too long instructions like myList[len(myList)-X] where X is the reverse index of some element one would need to use.
+      </p>
+      <p>
+<code>
+
+>>> myList = [1, 2, 3, 4, 5]
+>>> print(myList[-1])
+5
+This is the equivalent with the following instruction (which is much longer)
+
+>>> print(myList[len(myList)-1])
+5
+      </code>
+      </p>
+      <p>
+SlicingSection
+In some cases, it is useful to slice a list to get a fragment of it (either its beginning, its end, or some of the elements in the middle). This operation is very convenient to create new lists from existing ones, without having to fecth every single element. The syntax for slicing is the following: the name of the list, followed by two indexes separated by a colon, enclosed in square brackets. The first index is the one where to start the slice (the corresponding element is included in the result), the second index is the one where to end the slice (the corresponding element is not included in the result). The following examples show the different cases for slicing:
+
+Creating a list with the 2 first elements:
+</p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> startList = myList[0:2]
+>>> print(startList)
+[1, 2]
+      </code>
+      </p>
+      <p>
+Creating a third list with the last elements:
+</p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> endList = myList[3:5]
+>>> print(endList)
+[4, 5
+      </code>
+      </p>
+      <p>
+For the sake of completeness, here are some edge cases if you were wondering about errors:
+</p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> print(myList[0:85454])
+[1,2,3,4,5]
+>>> print(myList[2:1])
+[] (since 2 is smaller than 1)
+      </code>
+      </p>
+      <p>
+As mentioned earlier, negative indexes are a shortcut notation. There is also a shortcut notation for slicing so that it is more convenient to get X elements from the start of a given list or to get Y elements from its end (or even "get a sublist of all the elements except the first X elements" or "get a sublist of all the elements except the last Y elements"). The following examples show the different cases for slicing.
+
+Creating a list with the 2 first elements, differently:
+</p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> startList = myList[:2]
+>>> print(startList)
+[1, 2]    
+</code>
+      </p>
+      <p>
+Creating a list with the end, differently:
+</p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> endList = myList[-2:]
+>>> print(endList)
+[4, 5]    
+</code>
+      </p>
+
+  <p>
+Creating a list without some elements from its beginning:
+</p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> headlessList = myList[2:]
+>>> print(headlessList)
+[3, 4, 5]    
+</code>
+      </p>
+      <p>
+
+Creating a list without some elements from its end:
+      </p>
+      <p>
+<code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> queuelessList = myList[:-4]
+>>> print(queuelessList)
+[1]
+</code></p>
+      <p>
+MutabilitySection
+In Python, lists are mutable. That means that once you have defined a list, it is possible to change its content in following instructions. A list can be modified with direct access or via some operations or functions. These examples show some of these possible operations.
+
+Changing the second element by setting it to 10:
+     </p>
+
+      <p>
+        <code>
+>>> myList = [1, 2, 3, 4, 5]
+>>> myList[1] = 10
+>>> print(myList)
+[1, 10, 3, 4, 5]
+      </code></p>
+      <p>
+Concatenating two lists:
+    </p>
+<p>
+  <code>
+>>> listA = [1, 2, 3]
+>>> listB = [2, 4, 6]
+>>> listA = listA + listB
+>>> print(listA)
+[1, 2, 3, 2, 4, 6]
+      </code></p>
+        <p>
+Using a built-in function to modify the list:
+        </p>
+        <p>
+      <code>
+>>> myList = [1, "foo", "bar", 2]
+>>> myList.reverse()
+>>> print(myList)
+[2, "bar", "foo", 1]:
+        </code></p>
+      <li><p>Six data types that are primitives:</p>
+<ul>
+  <li>Boolean. true and false.</li>
+<li>Because.</li>
+  <li>undefined. A top-level property whose value is undefined.</li>
+<li>Number..</li>
+  <li>String. "Howdy"</li>
+        <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li></ul>
+      <li>and Object</li>
+Although these data 
+    </article>
+    </section>
+  <section class="main-section" id="Loops">
+    <header>Loops</header>
+    <article>
+      <p>
+LoopsSection
+A "Loop" is a set of logical instruction(s), that is repeated continuously untill a certain logical condition is met.
+
+The while statementSection
+ 
+
+Computers are often used to automate repetitive tasks. Repeating identical or similar tasks without making errors is something that computers do well and people do poorly. Because iteration is so common, Python provides several language features to make it easier.
+
+One form of iteration in Python is the while statement. Here is a simple program that counts down from five and then says "Blastoff!".
+</p>
+    <p><code>
+n = 5
+while n > 0:
+print(n)
+n = n - 1
+print('Blastoff!')
+       </code></p>
+    <p>
+You can almost read the while statement as if it were English. It means, "While n is greater than 0, display the value of n and then reduce the value of n by 1. When you get to 0, exit the while statement and display the word Blastoff!"
+
+ 
+
+More formally, here is the flow of execution for a while statement:
+
+Evaluate the condition, yielding True or False.
+
+If the condition is false, exit the while statement and continue execution at the next statement.
+
+If the condition is true, execute the body and then go back to step
+ 
+This type of flow is called a loop because the third step loops back around to the top. We call each time we execute the body of the loop an iteration. For the above loop, we would say, "It had five iterations", which means that the body of the loop was executed five times.
+
+ 
+
+The body of the loop should change the value of one or more variables so that eventually the condition becomes false and the loop terminates. We call the variable that changes each time the loop executes and controls when the loop finishes the iteration variable. If there is no iteration variable, the loop will repeat forever, resulting in an infinite loop.
+
+Infinite loopsSection
+An endless source of amusement for programmers is the observation that the directions on shampoo, "Lather, rinse, repeat," are an infinite loop because there is no iteration variable telling you how many times to execute the loop.
+
+ 
+
+In the case of countdown, we can prove that the loop terminates because we know that the value of n is finite, and we can see that the value of n gets smaller each time through the loop, so eventually we have to get to 0. Other times a loop is obviously infinite because it has no iteration variable at all.
+
+ 
+
+"Infinite loops" and breakSection
+ 
+
+Sometimes you don't know it's time to end a loop until you get half way through the body. In that case you can write an infinite loop on purpose and then use the break statement to jump out of the loop.
+
+This loop is obviously an infinite loop because the logical expression on the while statement is simply the logical constant True:
+ </p>
+    <p>
+      <code>
+n = 10
+while True:
+print(n, end=' ')
+n = n - 1
+print('Done!')
+       </code></p>
+    <p>
+If you make the mistake and run this code, you will learn quickly how to stop a runaway Python process on your system or find where the power-off button is on your computer. This program will run forever or until your battery runs out because the logical expression at the top of the loop is always true by virtue of the fact that the expression is the constant value True.
+
+While this is a dysfunctional infinite loop, we can still use this pattern to build useful loops as long as we carefully add code to the body of the loop to explicitly exit the loop using break when we have reached the exit condition.
+
+For example, suppose you want to take input from the user until they type done. You could write:
+      </p>
+    <p>
+<code>
+while True:
+    line = input('> ')
+    if line == 'done':
+        break
+    print(line)
+print('Done!')
+       </code></p>
+    <p>
+The loop condition is True, which is always true, so the loop runs repeatedly until it hits the break statement.
+
+Each time through, it prompts the user with an angle bracket. If the user types done, the break statement exits the loop. Otherwise the program echoes whatever the user types and goes back to the top of the loop. Here's a sample run:
+ </p>
+    <p>
+      <code>
+> hello there
+hello there
+> finished
+finished
+> done
+       </code></p>
+    <p>
+Done!
+This way of writing while loops is common because you can check the condition anywhere in the loop (not just at the top) and you can express the stop condition affirmatively ("stop when this happens") rather than negatively ("keep going until that happens.").
+
+Finishing iterations with continueSection
+ 
+
+Sometimes you are in an iteration of a loop and want to finish the current iteration and immediately jump to the next iteration. In that case you can use the continue statement to skip to the next iteration without finishing the body of the loop for the current iteration.
+
+Here is an example of a loop that copies its input until the user types "done", but treats lines that start with the hash character as lines not to be printed (kind of like Python comments).
+
+while True:
+    line = input('> ')
+    if line[0] == '#':
+        continue
+    if line == 'done':
+        break
+    print(line)
+print('Done!')
+       </code></p>
+    <p>
+Here is a sample run of this new program with continue added.
+    </p>
+    <p>
+    <code>
+     
+> hello there
+hello there
+> # don't print this
+> print this!
+print this!
+> done
+      </code></p>
+    <p>
+Done!
+     
+All the lines are printed except the one that starts with the hash sign because when the continue is executed, it ends the current iteration and jumps back to the while statement to start the next iteration, thus skipping the print statement.
+
+Definite loops using forSection
+ 
+
+Sometimes we want to loop through a set of things such as a list of words, the lines in a file, or a list of numbers. When we have a list of things to loop through, we can construct a definite loop using a for statement. We call the while statement an indefinite loop because it simply loops until some condition becomes False, whereas the for loop is looping through a known set of items so it runs through as many iterations as there are items in the set.
+
+The syntax of a for loop is similar to the while loop in that there is a for statement and a loop body:
+      </>
+    <p>
+      <code>
+friends = ['Joseph', 'Glenn', 'Sally']
+for friend in friends:
+print('Happy New Year:', friend)
+print('Done!')
+      </code>
+    </p>
+      <p>
+In Python terms, the variable friends is a list1 of three strings and the for loop goes through the list and executes the body once for each of the three strings in the list resulting in this output:
+      </p>
+    <p>
+<code>
+Happy New Year: Joseph
+Happy New Year: Glenn
+Happy New Year: Sally
+      </code></p>
+    <p>
+Done!
+Translating this for loop to English is not as direct as the while, but if you think of friends as a set, it goes like this: "Run the statements in the body of the for loop once for each friend in the set named friends."
+
+Looking at the for loop, for and in are reserved Python keywords, and friend and friends are variables.
+      </p>
+    <p>
+<code>
+for friend in friends:
+print('Happy New Year:', friend
+      </code></p>
+      <p>
+In particular, friend is the iteration variable for the for loop. The variable friend changes for each iteration of the loop and controls when the for loop completes. The iteration variable steps successively through the three strings stored in the friends variable.
+
+Loop patternsSection
+Often we use a for or while loop to go through a list of items or the contents of a file and we are looking for something such as the largest or smallest value of the data we scan through.
+
+These loops are generally constructed by:
+
+Initializing one or more variables before the loop starts
+
+Performing some computation on each item in the loop body, possibly changing the variables in the body of the loop
+
+Looking at the resulting variables when the loop completes
+
+We will use a list of numbers to demonstrate the concepts and construction of these loop patterns.
+
+Counting and summing loopsSection
+For example, to count the number of items in a list, we would write the following for loop:
+      
+    <p>
+      <code>
+count = 0
+for itervar in [3, 41, 12, 9, 74, 15]:
+count = count + 1
+print('Count: ', count)
+      </code>
+    </p>
+      <p>
+We set the variable count to zero before the loop starts, then we write a for loop to run through the list of numbers. Our iteration variable is named itervar and while we do not use itervar in the loop, it does control the loop and cause the loop body to be executed once for each of the values in the list.
+
+In the body of the loop, we add 1 to the current value of count for each of the values in the list. While the loop is executing, the value of count is the number of values we have seen "so far".
+
+Once the loop completes, the value of count is the total number of items. The total number "falls in our lap" at the end of the loop. We construct the loop so that we have what we want when the loop finishes.
+
+Another similar loop that computes the total of a set of numbers is as follows:
+      </p>
+    <p>
+      <code>
+total = 0
+for itervar in [3, 41, 12, 9, 74, 15]:
+total = total + itervar
+print('Total: ', total)
+      </code>
+    </p>
+      <p>
+In this loop we do use the iteration variable. Instead of simply adding one to the count as in the previous loop, we add the actual number (3, 41, 12, etc.) to the running total during each loop iteration. If you think about the variable total, it contains the "running total of the values so far". So before the loop starts total is zero because we have not yet seen any values, during the loop total is the running total, and at the end of the loop total is the overall total of all the values in the list.
+
+As the loop executes, total accumulates the sum of the elements; a variable used this way is sometimes called an accumulator.
+
+Neither the counting loop nor the summing loop are particularly useful in practice because there are built-in functions len() and sum() that compute the number of items in a list and the total of the items in the list respectively.
+
+Maximum and minimum loopsSection
+ 
+To find the largest value in a list or sequence, we construct the following loop:
+      </p>
+    <p>
+      <code>
+largest = None
+print('Before:', largest)
+for itervar in [3, 41, 12, 9, 74, 15]:
+if largest is None or itervar > largest :
+largest = itervar
+print('Loop:', itervar, largest)
+print('Largest:', largest)
+      </code>
+    </>
+    <p>
+When the program executes, the output is as follows:
+      </p>
+    <p>
+      <code>
+Before: None
+Loop: 3 3
+Loop: 41 41
+Loop: 12 41
+Loop: 9 41
+Loop: 74 74
+Loop: 15 74
+Largest: 74
+      </code>
+    </p>
+    <p>
+The variable largest is best thought of as the "largest value we have seen so far". Before the loop, we set largest to the constant None. None is a special constant value which we can store in a variable to mark the variable as "empty".
+
+Before the loop starts, the largest value we have seen so far is None since we have not yet seen any values. While the loop is executing, if largest is None then we take the first value we see as the largest so far. You can see in the first iteration when the value of itervar is 3, since largest is None, we immediately set largest to be 3.
+
+After the first iteration, largest is no longer None, so the second part of the compound logical expression that checks itervar > largest triggers only when we see a value that is larger than the "largest so far". When we see a new "even larger" value we take that new value for largest. You can see in the program output that largest progresses from 3 to 41 to 74.
+
+At the end of the loop, we have scanned all of the values and the variable largest now does contain the largest value in the list.
+
+To compute the smallest number, the code is very similar with one small change:
+      </p>
+    <p>
+<code>
+smallest = None
+print('Before:', smallest)
+for itervar in [3, 41, 12, 9, 74, 15]:
+if smallest is None or itervar < smallest:
+smallest = itervar
+print('Loop:', itervar, smallest)
+print('Smallest:', smallest)
+                                              </code>
+      </p>
+                                              <p>
+Again, smallest is the "smallest so far" before, during, and after the loop executes. When the loop has completed, smallest contains the minimum value in the list.
+
+Again as in counting and summing, the built-in functions max() and min() make writing these exact loops unnecessary.
+
+The following is a simple version of the Python built-in min() function:
+                                              </p>
+      <p>
+        <code>
+def min(values):
+    smallest = None
+    for value in values:
+        if smallest is None or value < smallest:
+            smallest = value
+    return smallest
+      </code></p>
+    <p>
+In the function version of the smallest code, we removed all of the print statements so as to be equivalent to the min function which is already built in to Python.
+
+<code>if (condition)</code>
+condition can be anyd if statements.
+<p>
+You may also compeements
+      </p>
+<code>if  </code>
+In the case of multiple cstatements:
+
+<code>if (condition) {
+  statef_condition_is_false;
+}</code>
+It is advisable to n with equality when glancingthe code. F\mple, do use the following code:
+<code>if
+  /* statements here */
+</code>
+:
+
+<code>if</code>
+    </article>
+    </section>
+  <section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+A w itws:
+
+<code>wh (condition)
+  statement</code>
+If toop.
+
+<p>Thionccufotemgile.</p>
+
+      <p>To exmentents.</p>
+
+Example:
+
+      <p>Twhilo itthree:</p>
+
+<code>
+while (n < 3
+</code>
+<p>With each iteration, tues:</p>
+
+<li>Aft firs: n = x = 1</li>
+<li>Afthe sec: n = 2 = 3</li>
+<li>Ar d p n = 3  9  6</li>
+ <p>Afcom.</p>
+    </article>
+    </section>
+    <section class="main-section" id="Advanced_Concepts">
+    <header>Advanced Concepts</header>
+           <article>
+A w itws:
+
+<code>wh (condition)
+  statement</code>
+If toop.
+
+<p>Thionccufotemgile.</p>
+
+      <p>To exmentents.</p>
+
+Example:
+
+      <p>Twhilo itthree:</p>
+
+<code>
+while (n < 3
+</code>
+<p>With each iteration, tues:</p>
+
+<li>Aft firs: n = x = 1</li>
+<li>Afthe sec: n = 2 = 3</li>
+<li>Ar d p n = 3  9  6</li>
+ <p>Afcom.</p>
+    </article>
+    </section> 
+   
+  <section class="main-section" id="More_Advanced_Concepts">
+    <header>More Advanced Concepts</header>
+   
+<article>
+      <li>Tnaoution.</li>
+      <li>A lts toonedrenthesesd separ.</li>
+      <li>Nameof .</li>
+      <p>Forpleollcoamere:</P>
+
+    <code>fun</code>
+<p>Tfuncargumento.
+    </p>
+    <code>return;</code>
+<p>Pn.</p>
+    </article>
+    </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+       <p>Loren and Lorwakdjjf skldhflksjditfgoais;hdghs dhg sldkfhgh ;gkhsdgf we;ihf;ku shdkjfh .</p>
+      <li>All the documentation in this page is taken from</li> 
+       <li>All the documentation in this page is taken from</li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/Drafts/Python" target="_blank">MDN</a>
+    </article>
+    </section>
+</main>
+
+</body>
+</html>
