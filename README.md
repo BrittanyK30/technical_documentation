@@ -1,16 +1,13 @@
 # py
 # Project Objective: 
-#Technical Documentation Page
+#Technical Documentation Page for Python Language
 
 # Getting Started (details provided upon completion).
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. (details provided upon completion).
 
 # Prerequisites (details provided upon completion).
-#What things you need to install the software and how to install them (details provided upon completion).
+#Github/CLI/IDE (ex. VS Code via "live" or browser extension).
 
-# Examples
-#Installing (details provided upon completion).
-#A step by step series of examples that tell you how to get a development env running (upon completion).
 
 # Step One: Will be laid out in detail upon completion.
 
@@ -33,10 +30,10 @@ These instructions will get you a copy of the project up and running on your loc
 #CSS3
 #JS
 # Contributing
-#Not applicable at the current juncture. 
+#Not applicable
 
 # Versioning
-#Not applicable at the current juncture. 
+#Not applicable 
 
 # Authors
 #Brittany Thirty
@@ -54,13 +51,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF    # MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE   # FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN            # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#Acknowledgments
-#
-# Inspiration
-# 
 
-
-# DISCLAIMER: 
-#*No warranties presented, neither express nor implied. The information herein, is presented with in an effort to be                 #accurate, should not be construed as #true or complete; the information herein is not legal advice and should not be construed       #as legal advice. The information herein is #not medical advice and should not be construed as medical advice. This information is      # for entertainment purposes only. Users/Readers #are strongly encouraged to perform their own due #diligence and by utilizing/accessing # the contents of this page/site/author the #user/reader consents to use the information at his or her own risk and to hold the author  # harmless:  The author and creator, and any #of the affilites of the author/creator are held harmless and will not be held liable for  # the risk, danger, injury, or damages #to another party
 
 
